@@ -1,8 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import { Button, Flex, FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
+import { Button, Flex, Stack } from '@chakra-ui/react';
+import { Input } from '../components/Form/Input';
 
-function Home() {
+function SignIn() {
   return (
     <Flex w="100vw" h="100vh" alignItems="center" justifyContent="center">
       <Flex
@@ -15,33 +16,8 @@ function Home() {
         flexDir="column"
       >
         <Stack spacing="4">
-          <FormControl>
-            <FormLabel htmlFor="email">E-mail</FormLabel>
-            <Input
-              name="email"
-              id="email"
-              type="email"
-              focusBorderColor="pink.500"
-              variant="filled"
-              bgColor="gray.900"
-              _hover={{ bgColor: 'gray.900' }}
-              size="lg"
-            />
-          </FormControl>
-          <FormControl>
-            <FormLabel htmlFor="password">Password</FormLabel>
-            <Input
-              name="password"
-              id="password"
-              type="password"
-              focusBorderColor="pink.500"
-              variant="filled"
-              bgColor="gray.900"
-              _hover={{ bgColor: 'gray.900' }}
-              size="lg"
-            />
-          </FormControl>
-
+          <Input type="email" name="email" label="Email" />
+          <Input type="password" name="password" label="Password" />
           <Button type="submit" marginTop="6" colorScheme="pink" size="lg">
             Entrar
           </Button>
@@ -51,4 +27,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default SignIn;
