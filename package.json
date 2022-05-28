@@ -1,6 +1,7 @@
 {
   "name": "dashgo",
   "version": "0.1.0",
+  "author": "Joao Guimaraes",
   "private": true,
   "scripts": {
     "dev": "next dev",
